@@ -109,7 +109,7 @@
                             navgationBarBackgroundImage:'',
 //                            自定义标题视图的JSBundle地址 如果以http开头 会渲染网络JSBundle 反之 渲染本地JSBundle
                             customTitleViewURL:'',
-                            rootViewURL:host + dirctoryPath + 'index.js',
+                            rootViewURL:host + 'dist/Components/Frame/FirstViewController.js',
                         },
                         {
                             title:'',
@@ -122,7 +122,7 @@
                             navigationBarBackgroundColor:'',
                             navgationBarBackgroundImage:'',
                             customTitleViewURL:'',
-                            rootViewURL:host + dirctoryPath + 'find.js',
+                            rootViewURL:host + 'dist/Components/Frame/SecondViewController.js',
                         },
                         {
                             title:'名刊会',
@@ -138,17 +138,17 @@
                             rootViewURL:host + 'dist/components/Frame/ThirdViewController.js',
                         },
                         {
-                            title:'',
-                            clearTitleColor:'',
-                            blurTitleColor:'',
+                            title:'第四个页面',
+                            clearTitleColor:'333333',
+                            blurTitleColor:'333333',
                             leftItemsInfo:[{aciton:'',itemURL:''}],
-                            rightItemsInfo:[{aciton:'',itemURL:host + 'dist/components/Frame/MKHRightItem.js',frame:'{{0, 0}, {33, 16}}'}],
+                            rightItemsInfo:[{aciton:'',itemURL:'',frame:'{{0, 0}, {33, 16}}'}],
                             clearNavigationBar:false,
                             hiddenNavgitionBar:true,
                             navigationBarBackgroundColor:'',
                             navgationBarBackgroundImage:'',
                             customTitleViewURL:'',
-                            rootViewURL:host + 'dist/components/Frame/FifthViewController.js',
+                            rootViewURL:host + 'dist/Components/Frame/FifthViewController.js',
                         },
 
                     ]),
