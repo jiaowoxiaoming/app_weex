@@ -18,6 +18,13 @@
 </template>
 
 <style>
+    .rightItem
+    {
+        top: 68px;
+        right: 29px;
+        font-size: 32px;
+        color: #666666;
+    }
     .topPlaceholder
     {
         height: 128px;
@@ -134,8 +141,10 @@
             }
         },
         methods: {
+            goEditPage()
+            {
 
-
+            }
         },
         components:{
             tableViewCell
