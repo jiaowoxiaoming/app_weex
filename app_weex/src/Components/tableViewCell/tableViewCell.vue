@@ -1,5 +1,5 @@
 <template>
-    <div class="containerView">
+    <div class="containerView" @click="goPage">
         <div class="view">
             <div class="leftView">
                 <image class="imageView" :src="item.image"></image>
@@ -95,13 +95,17 @@
 </style>
 
 <script>
+
+    let appBasicModule = weex.requireModule('XMWXModule')
     export default {
         props: {
+//        cell的Model数据
             item: {
                 type: Object,
                 default: 'null'
             },
-            isMark: {
+//        因为点赞和余额的DetailTextLabel的颜色不一样，需要给其一个判断条件
+            isMark: {//这个cell是不是点赞Cell
                 type: Boolean,
                 default: false
             }
@@ -109,6 +113,27 @@
         data () {
             return {}
         },
-        methods: {}
+        methods: {
+            goPage()
+            {
+                var navigtionBarInfo = {
+                    title: '名刊会会员',
+                    clearTitleColor:'333333',
+                    blurTitleColor:'333333',
+                    clearNavigationBar:true,
+                    hiddenNavgitionBar:false,
+                    navigationBarBackgroundColor:'',
+                    navgationBarBackgroundImage:'',
+                    customTitleViewURL:'',
+                };
+                appBasicModule.openURL(this.item.actionUrl,{
+                    navigtionBarInfo:navigtionBarInfo,
+                },function (result) {
+                    
+                })
+            }
+
+
+        }
     }
 </script>

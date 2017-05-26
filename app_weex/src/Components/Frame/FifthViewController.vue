@@ -86,6 +86,7 @@
     import tableViewCell from '../tableViewCell/tableViewCell.vue'
 //    let stream = weex.requireModule('stream')
 //    let  apiHost = 'http://hulu.top'
+    var host = 'http://localhost/'
     export default {
         data () {
             return {
@@ -96,6 +97,7 @@
                         detailText:'',
                         accessViewUrl:'http://mkhioslocal/arrowOfCell',
                         type:0,
+                        actionUrl: host + 'dist/MineCenter/VIPCenterViewController.js',
                     },
                     {
                         text:'账户余额',
@@ -103,6 +105,7 @@
                         detailText:'0.00',
                         accessViewUrl:'http://mkhioslocal/arrowOfCell',
                         type:1,
+                        actionUrl: host + 'dist/MineCenter/VIPCenterViewController.js',
                     },
                     {
                         text:'购买记录',
@@ -110,6 +113,7 @@
                         detailText:'',
                         accessViewUrl:'http://mkhioslocal/arrowOfCell',
                         type:2,
+                        actionUrl: host + 'dist/MineCenter/VIPCenterViewController.js',
                     },
                     {
                         text:'会员卡激活',
@@ -117,6 +121,7 @@
                         detailText:'',
                         accessViewUrl:'http://mkhioslocal/arrowOfCell',
                         type:3,
+                        actionUrl: host + 'dist/MineCenter/VIPCenterViewController.js',
                     },
                     {
                         text:'我赞过的',
@@ -126,6 +131,7 @@
                         refKey:'myMarkDetailLabel',
                         type:4,
                         isMark:true,
+                        actionUrl: host + 'dist/MineCenter/VIPCenterViewController.js',
                     },
                     {
                         text:'设置',
@@ -133,6 +139,7 @@
                         detailText:'',
                         accessViewUrl:'http://mkhioslocal/arrowOfCell',
                         type:5,
+                        actionUrl: host + 'dist/MineCenter/VIPCenterViewController.js',
                     }
 
                 ],
