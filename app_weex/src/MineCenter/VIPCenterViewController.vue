@@ -10,6 +10,7 @@
                 <text class="vipDisc">开通名刊会会员，让阅读无限制</text>
             </div>
         </div>
+        <vip-table-view-cell :item="item" :isConcessions="item.isConcessions" v-for="item in itemList" :key="item.type"></vip-table-view-cell>
     </div>
 </template>
 
@@ -76,11 +77,35 @@
 
 <script>
 
-    import vipTableViewCell from '../tableViewCell/VIPCenterTableViewCell.vue'
+    import vipTableViewCell from '../components/tableViewCell/VIPCenterTableViewCell.vue'
     export default {
         data () {
-            return {}
+            return {
+                itemList:[
+                    {
+
+                        text:'12个月',
+                        detailText:'优惠季，原价180元，速来抢购',
+                        type:0,
+                        price:'¥128.00'
+                    },
+                    {
+
+                        text:'1个月',
+                        detailText:'优惠季，原价40元，速来抢购',
+                        isConcessions:true,
+                        type:1,
+                        price:'¥35.00'
+                    }
+                ]
+            }
         },
-        methods: {},
+        methods: {
+
+        },
+        components:{
+            vipTableViewCell,
+        }
+
     }
 </script>

@@ -117,7 +117,7 @@
             goPage()
             {
                 var navigtionBarInfo = {
-                    title: '名刊会会员',
+                    title: this.item.navigaitonBarTitle,
                     clearTitleColor:'333333',
                     blurTitleColor:'333333',
                     clearNavigationBar:true,
