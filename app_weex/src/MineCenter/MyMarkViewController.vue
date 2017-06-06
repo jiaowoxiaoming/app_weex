@@ -1,7 +1,9 @@
 <template>
-    <div class="view">
+    <list class="view">
+        <cell class="">
 
-    </div>
+        </cell>
+    </list>
 </template>
 
 <style>
@@ -15,7 +17,9 @@
 <script>
     export default {
         data () {
-            return {}
+            return {
+
+            }
         },
         methods: {}
     }

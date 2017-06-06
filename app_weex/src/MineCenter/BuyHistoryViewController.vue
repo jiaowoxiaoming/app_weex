@@ -139,6 +139,8 @@
 
             }
         },
-        methods: {}
+        methods: {
+
+        }
     }
 </script>
