@@ -1,3 +1,6 @@
+请去简书查看如何使用该Demo
+[Weex 从无到有开发一款上线应用 5](http://www.jianshu.com/p/40e4b0d1925d)
+
 # app_weex
 
 > app_weex
